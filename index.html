@@ -137,7 +137,7 @@ section{position:relative}
 .c-photos figure:nth-child(2){transform:translateY(34px)}
 .c-photos figure:hover{transform:translateY(-6px) scale(1.02)}
 .c-photos figure:nth-child(2):hover{transform:translateY(28px) scale(1.02)}
-.c-photos img{width:100%;height:100%;object-fit:cover;object-position:top}
+.c-photos img{width:100%;height:100%;object-fit:cover;object-position:center 40%;transform:scale(1.18)}
 .c-photos figcaption{position:absolute;left:8px;bottom:8px;background:rgba(255,255,255,.92);padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600}
 .c-list{display:grid;gap:12px;margin-top:30px}
 .c-list div{display:flex;gap:14px;align-items:flex-start;font-size:15px;color:var(--ink-2)}
@@ -286,6 +286,10 @@ footer{background:#0e1014;color:rgba(250,247,242,.7);padding:90px 0 30px;overflo
   .stat-card b{font-size:26px}
   .doc-card{left:8px;right:8px;bottom:12px}
   .p-grid{grid-template-columns:1fr}
+  .c-photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:0 16px 10px;scrollbar-width:none}
+  .c-photos::-webkit-scrollbar{display:none}
+  .c-photos figure{flex:0 0 72%;scroll-snap-align:center}
+  .c-photos figure:nth-child(2){transform:none}
   .proc{min-height:0}
   .steps{grid-template-columns:1fr}
   .counters{grid-template-columns:1fr 1fr 1fr;gap:8px}
